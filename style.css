@@ -1,71 +1,126 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
-} */
-.head{
-    background-color: rgb(92, 51, 8);
-    padding: 10px;
 }
-/* header{
-    background-color: rgb(92, 51, 8);
-    padding: 20px;
-    
-} */
-header,a{
-    color: aliceblue;
-    text-align: center;
-    margin: 20px;
+a {
     text-decoration: none;
+    color: #ffffff;
+}
+.header 
+{ 
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(92, 51, 8);
+}
+      
+.identity h1
+ {
+    font-size: 2em;
+    margin: 20px 0 0;
+    display: inline-block;
+ }
+      
+      
+.navigation ul, .navigation li
+ {
+    margin: 0; 
+    padding: 0;
+}
+      
+.navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1.4em 1em;
     font-size: 20px;
 }
-.containner{
+.container{
     background-color: rgb(219, 176, 136);
     padding: 90px;    
 }
-button{
-    background-color: rgb(92, 51, 8);
-    color: #fff;
-    padding: 10px;
+.company-name{
+    font-size: 1.5rem;
+    color: #7d0f0f;
+    font-weight: bold;
 }
-h1{
+.main-heading{
+    font-size: 2.5rem;
+    color: #222121;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+.consultation-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    /* cursor: pointer; */
+    border-radius: 5px;
+}
+.content-heading{
     font-size: 40px;
+
 }
-.content{
-    padding: 70px 95px;
-    font-size: 20px;
+.about-heading{
+    padding-top: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #3db00f;
+    text-decoration: underline;
+}
+.content, .about-title, .about-text{
+    margin: 0px 60px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 23px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.about{
+.about-title{
+    color: rgb(163, 73, 12);
+    text-decoration: underline;
+}
+.about-section{
+    padding-top: 20px;
+    display: flex;
+    
+    /* margin: 0px 50px; */
+    /* margin-left: 55px; */
+}
+.about-content{
     background-color: rgb(248, 230, 181);
     color: rgb(92, 51, 8);
+    text-align: justify;
     font-size: 30px;
-    padding: 90px 95px 70px 70px;
-    width: 100;
-    
+    padding: 90px 95px 50px 70px;
+    width: 100;   
 }
-h3{
-    color: rgb(163, 73, 12);
+.codinate{
+    height: 700px;
+    width: 900px;
+}
+.text{
+    margin-top: 70px;
+    line-height: 40px;
+}
+.heading{
+    text-align: center;
+    padding: 50px 0;
+    color: #3db00f;
+    text-decoration: underline;
 }
 .member{
     margin-left: 50px;
     display: flex;
     gap: 20px;
 }
-section{
-    padding-top: 20px;
-    display: flex;
-    /* margin: 0px 50px; */
-    /* margin-left: 55px; */
-}
-
 .box{
     background-color: rgb(92, 51, 8);
     text-align: center;
     padding: 30px;
     color: aliceblue;
 }
-.heading{
+.form-head{
     text-align: center;
+    padding-top: 50px;
 }
 form{
     border: 1px solid;
@@ -75,7 +130,7 @@ form{
     background-color: rgb(245, 238, 223);
 }
 .contact_section {
-display: flex;
+    display: flex;
 }
 label{
     /* display: inline-block; */
@@ -92,22 +147,87 @@ label{
     border-radius: 45px;
     /* color: #737272; */
 }
-h2{
-    margin-left: 7em;
-    padding-top: 70px;
-}
 .form_group{
     padding: 10px;
     font-size: 20px;
+}
+.submit{
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    padding: 1.2rem 4rem;
+    margin: 10px 0 0 15px;
+    border-radius: 30px;
 } 
 table,th,td{
     border: 1px solid; 
 }
 .frame{
-    margin-top: 95px;
+    margin-top: 9rem;
 }
-.element{
-    background-color: rgb(92, 51, 8);
-    align-items: center;
-}
+footer{
+    text-align: center;
+      padding: 20px 10px;
+      font-size: 20px;
+      background-color: rgb(92, 51, 8);
+      color: #fff;
+    }
+    @media screen and (max-width: 768px){
+           
+.navigation li {
+    display: block;
 
+} 
+.container {
+    padding: 60px;
+}
+.about-title,.about-text,.content{
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.about-section{
+    display: inline-block;
+    margin: 0;
+    width: 420px;
+}
+.about-content{
+    padding: 40px;
+    font-size: 23px;
+}
+.about-heading{
+    font-size: 20px;
+}
+.content-heading1{
+    font-size: 1.5em;
+}
+.text{
+    margin-top: 50px;
+}
+.codinate {
+    height: 400px;
+    width: 420px;
+}
+.member{
+    display: inline-block;
+    margin: 20px;
+}
+.box{
+    margin-bottom: 20px;
+}
+.contact_section {
+    display: inline-block;
+}
+form{
+    margin-left: 20px;
+    padding: 20px;
+    width: 330px;
+}
+.form-head{
+    text-align: left;
+    margin-left: 70px;
+}
+.frame {
+    margin-top: 5rem;
+}
+    }
